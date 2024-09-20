@@ -31,6 +31,12 @@ function NavBar() {
               <ArrowForwardIosIcon fontSize="20" />
             </div>
           </Link>
+          <Link style={{textDecoration:"none"}} to="/imgtopdf" onClick={() => handleClick('box3')}> 
+            <div className={`side-box sidebox3 ${activeBox === 'box3' ? 'active' : ''}`}>
+              Convert Img to Pdf
+              <ArrowForwardIosIcon fontSize="20" />
+            </div>
+          </Link>
         </div>
         <div className="main-area">
           <Outlet />

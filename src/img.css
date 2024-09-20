@@ -1,0 +1,71 @@
+
+.img-input-box{
+    min-height: 150px;
+    width: 550px;
+    border: 2px solid rgb(13, 13, 203);
+    position: relative;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+  }
+  .img-input{
+    background-color: aquamarine;
+    height: 120px;
+    width: 510px;
+    z-index: 20;
+    opacity: 0;
+    cursor: pointer;
+    padding: 20px;
+  }
+  .input-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+   padding: 10px 20px;
+   background-color: rgb(45, 45, 247);
+   border-radius: 5px;
+   pointer-events: none;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+  }
+.button-imgtopdf{
+    border: none;
+    background-color: blue;
+    padding: 15px 30px;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}  
+.imgtopdf-form{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.download-imgtopdf{
+    border: none;
+    background-color: blue;
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 180px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+   margin: 10px;
+}

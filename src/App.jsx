@@ -3,6 +3,7 @@ import {Route, Routes, BrowserRouter } from "react-router-dom";
 import TxtToPdf from './TxtToPdf';
 import PdfToTxt from './PdfToTxt';
 import NavBar from './NavBar';
+import ImageToPdfConverter from './ImgToPdf';
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
           {/* <Route index element={<TxtToPdf />} /> */}
           <Route path="txttopdf" element={<TxtToPdf />} />
           <Route path="pdftotxt" element={<PdfToTxt />} />
+          <Route path="imgtopdf" element={<ImageToPdfConverter />} />
         </Route>
         </Routes>
     {/* </Router> */}

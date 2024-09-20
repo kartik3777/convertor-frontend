@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Outlet, Link , useNavigate } from "react-router-dom";
 import "./navbar.css";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+// import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 function NavBar() {
     const [activeBox, setActiveBox] = useState(null);
@@ -22,13 +22,13 @@ function NavBar() {
           <Link style={{textDecoration:"none"}} to="/pdftotxt" onClick={() => handleClick('box1')}> 
             <div className={`side-box sidebox1 ${activeBox === 'box1' ? 'active' : ''}`}>
               Convert Pdf to Txt
-              <ArrowForwardIosIcon fontSize="40" />
+              {/* <ArrowForwardIosIcon fontSize="40" /> */}
             </div>
           </Link>
           <Link style={{textDecoration:"none"}} to="/txttopdf" onClick={() => handleClick('box2')}> 
             <div className={`side-box sidebox2 ${activeBox === 'box2' ? 'active' : ''}`}>
               Convert Txt to Pdf
-              <ArrowForwardIosIcon fontSize="20" />
+              {/* <ArrowForwardIosIcon fontSize="20" /> */}
             </div>
           </Link>
         </div>

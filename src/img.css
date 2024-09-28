@@ -2,7 +2,7 @@
 .img-input-box{
     min-height: 150px;
     width: 550px;
-    border: 2px solid rgb(13, 13, 203);
+    border: 2px dashed rgb(13, 13, 203);
     position: relative;
     cursor: pointer;
     border-radius: 6px;
@@ -10,7 +10,7 @@
     background-color: rgb(255, 255, 255);
   }
   .img-input{
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     height: 120px;
     width: 510px;
     z-index: 20;
@@ -37,7 +37,7 @@
 .button-imgtopdf{
     border: none;
     background-color: blue;
-    padding: 15px 30px;
+    padding: 15px 20px;
     color: white;
     font-size: 18px;
     border-radius: 5px;
@@ -46,6 +46,7 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
+    width: 240px;
 
 }  
 .imgtopdf-form{
@@ -66,6 +67,51 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
-
    margin: 10px;
+}
+.selected-images {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative; /* So the bullet can be positioned */
+  padding-left: 20px; /* Add space for the bullet */
+}
+.selected-images::before {
+  content: '•'; /* This creates a bullet point */
+  position: absolute;
+  left: 0;
+  font-size: 25px; /* Adjust size to match */
+  color: black; /* Set color of the bullet */
+}
+.select-head{
+  display: flex;
+  align-items: center;
+  gap: 200px;
+}
+.clear-btn{
+   border: none;
+   background-color: rgb(27, 27, 240);
+   color: white;
+   padding: 5px 10px;
+   cursor: pointer;
+   border-radius: 3px;
+}
+
+
+.rotate {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.blink {
+  animation: blink 1.5s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }   /* Fully visible at start and end */
+  50% { opacity: 0.8; }        /* Invisible at the midpoint */
 }
